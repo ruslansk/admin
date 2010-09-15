@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:local="*" layout="absolute" width="440" height="358">
+	<local:Admin id="adm" />
+	<mx:Button x="10" y="70" label="Кнопка" id="vhod_btn"/>
+	<mx:TextInput x="10" y="10" id="log_it"/>
+	<mx:TextInput x="10" y="40" id="pas_it1" displayAsPassword="true"/>
+	<mx:TextInput x="178" y="10" id="usid" width="251"/>
+	<mx:TextInput x="178" y="39" id="hash" width="251"/>
+	<mx:Text x="10" y="100" width="419" color="#F60813" fontSize="14" fontWeight="bold" id="err_txt" height="66"/>
+	<mx:Button x="178" y="70" label="Login" id="btnLogin"/>
+	<mx:Button x="273" y="70" label="List" id="btnList"/>
+	<mx:Button x="364" y="70" label="Logout" id="btnLogout"/>
+	<!--mx:DataGrid height="159" id="dtgr" y="173" width="419" x="10">
+		<mx:columns>
+			<mx:DataGridColumn headerText="1" dataField="col1"/>
+			<mx:DataGridColumn headerText="2" dataField="col2"/>
+			<mx:DataGridColumn headerText="3" dataField="col3"/>
+		</mx:columns>
+	</mx:DataGrid-->
+	<local:DoubleClickDataGrid height="159" id="dtgr" y="173" width="419" x="10">
+		<local:columns>
+			<mx:DataGridColumn headerText="1" dataField="col1"/>
+			<mx:DataGridColumn headerText="2" dataField="col2"/>
+			<mx:DataGridColumn headerText="3" dataField="col3"/>
+		</local:columns>
+	</local:DoubleClickDataGrid>
+</mx:WindowedApplication>
